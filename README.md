@@ -86,7 +86,7 @@ Existing AGIQA models usually produce multi-peak prediction distributions, where
 > ### ✨ Explore AGRM Interactively
 >
 > Static curves too dense? Visit our **[Project Page](https://agqggithubio.vercel.app/)** to use the dynamic simulator. 
-> Adjust ability ($\theta$) and difficulty parameters in real-time to observe the guaranteed unimodal property!
+> Adjust ability and difficulty parameters in real-time to observe the guaranteed unimodal property!
 >
 > <p align="center">
 >   <a href="https://agqggithubio.vercel.app/" target="_blank">
@@ -95,7 +95,7 @@ Existing AGIQA models usually produce multi-peak prediction distributions, where
 > </p>
 
   <!-- 2. 长图展示画框 (限制宽度，防止宽屏拉伸模糊) -->
-  <div style="background: #ffffff; border: 1px solid #d0d7de; border-radius: 12px; padding: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.08);">
+<div style="background: #ffffff; border: 1px solid #d0d7de; border-radius: 12px; padding: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.08);">
     <a href="assets/agrm.png" target="_blank">
       <img src="assets/agrm.png" width="100%" style="border-radius: 6px; display: block;" alt="AGRM Probability Distributions"/>
     </a>
@@ -103,9 +103,20 @@ Existing AGIQA models usually produce multi-peak prediction distributions, where
 
   <!-- 3. 学术图注 (限制最大宽度，保证阅读体验) -->
   <em style="font-size: 0.88em; color: #57606a; display: block; text-align: center; margin-top: 16px; line-height: 1.7; max-width: 800px; margin-left: auto; margin-right: auto;">
-  <b>Figure 3:</b> Distributions of the cumulative category probability P*(θ) (first row), category response probability P(θ) (second row), and the category response probability at four specific θ (third row). With increasing γ, the response distributions exhibit enhanced unimodality, aligning more closely with the expected behavior in human quality assessment.
+  <b>Distributions</b> of the cumulative category probability P*(θ) (first row), category response probability P(θ) (second row), and the category response probability at four specific θ (third row). With increasing γ, the response distributions exhibit enhanced unimodality, aligning more closely with the expected behavior in human quality assessment.
   </em>
 </div>
+
+<p align="center">
+  <a href="assets/Response_detai.png" target="_blank">
+    <img src="assets/Response_detai.png" width="100%" alt="Figure 6"/>
+  </a>
+</p>
+
+> **Examples** of the operational unimodality criterion over five quality grades.
+>
+> - **Top row (Unimodal):** The four cases of Theorem 1: (a) mode at category 1; (b) interior mode; (c) mode at category 5; (d) a tied adjacent pair at the intersection θ = x₃, with the single equality P₃ = P₄.
+> - **Bottom row (Multimodal):** Each panel contains a strict valley Pᵢ > Pⱼ < Pₗ with i < j < l.
 
 <!-- 主图保持正常展示 -->
 <div align="center" style="max-width: 850px; margin: 20px auto; padding: 20px; background: #f6f8fa; border-radius: 12px; border: 1px solid #d0d7de;">
@@ -147,25 +158,6 @@ Existing AGIQA models usually produce multi-peak prediction distributions, where
   </div>
 </details>
 
-<details style="max-width: 950px; margin: 10px auto; border: 1px solid #d0d7de; border-radius: 12px; overflow: hidden;">
-  <summary style="cursor: pointer; padding: 15px 20px; background-color: #f6f8fa; font-weight: 600; color: #0969da;">
-    Click to expand: Illustration of the <i>“semantic drift”</i> phenomenon in existing AGIQA models.
-  </summary>
-  <div style="padding: 20px; background-color: #ffffff; text-align: center;">
-    <a href="assets/semantic_drift.png" target="_blank">
-      <img src="assets/semantic_drift.png" width="100%" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);" alt="Figure 4"/>
-    </a>
-    <div style="font-size: 0.9em; color: #57606a; text-align: left; margin-top: 15px; line-height: 1.6;">
-      <br>
-      <b>(a)</b> Comparison of quality grade predictions between IPCE and our enhanced model. 
-      <br><br>
-      <b>(b)</b> Our AGQG module consistently improves existing AGIQA models (CLIP-IQA, TIER, IPCE) across six diverse datasets spanning perceptual quality (<i>Q</i>), prompt consistency (<i>C</i>), and perceptual authenticity (<i>A</i>) dimensions. 
-      <br><br>
-      <span style="color: #0969da; font-weight: 600;">The raincloud plots of MSE distributions reflect that multimodal samples exhibit higher MSE compared to unimodal ones. The similarity matrix of multi-grade quality prompts reveals an ordinal structure: adjacent prompts are more similar, and similarity decreases with distance.</span>
-    </div>
-  </div>
-</details>
-
 ## :diamonds: Installation
 ```bash
 git clone https://github.com/zhix000/AGQG.git
@@ -199,13 +191,10 @@ python agqg_aigciqa.py                # CLIP-AGIQA + AGQG
     <img src="assets/grade_probabilities.png" width="100%" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);" alt="Figure 6"/>
   </a>
   <em style="font-size: 0.85em; color: #57606a; display: block; text-align: center; margin-top: 12px;">
-    <b>Quality-grade predictions</b> before and after AGQG integration. Each triplet shows an input image, the original prediction, and the AGQG-enhanced prediction.
+    <b>Quality-grade predictions</b> before and after AGQG integration. Each triplet shows an input image, the original prediction, and the AGQG-enhanced prediction. AGQG  mitigates separated probability peaks and produces a unimodal distribution over ordered quality grades.
   </em>
 </div>
 
-<p align="center" style="color: #57606a; font-size: 0.95em;">
-  The examples demonstrate that AGQG  mitigates separated probability peaks and produces a unimodal distribution over ordered quality grades.
-</p>
 
 <!-- 折叠面板展示第二张图 -->
 <details style="max-width: 950px; margin: 10px auto; border: 1px solid #d0d7de; border-radius: 12px; overflow: hidden;">
