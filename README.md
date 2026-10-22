@@ -26,19 +26,18 @@
 </div>
 
 <!-- 方案一：左图右文 · 核心亮点布局 -->
-
-<!-- <table align="center" style="border: none; border-collapse: collapse; width: 100%; max-width: 950px; margin: 20px auto;">
+<table align="center" style="border: none; border-collapse: collapse; width: 100%; max-width: 1050px; margin: 20px auto;">
   <tr>
     <td width="60%" align="center" valign="middle" style="padding: 10px;">
       <img src="assets/framework.png" width="100%" style="border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.12); border: 1px solid #d0d7de;" alt="AGQG Framework"/>
     </td>
-    <td width="55%" valign="middle" style="padding: 10px 25px; border-left: 2px solid #d0d7de;">
+    <td width="40%" valign="middle" style="padding: 10px 25px; border-left: 2px solid #d0d7de;">
       <h3 align="left" style="margin-top: 0; color: #24292f;">🌟 Core Highlights</h3>
       <ul align="left" style="line-height: 1.8; color: #24292f; font-size: 15px; padding-left: 20px; margin: 0;">
-        <li><b>Psychometrics-Inspired:</b> First attempt to introduce the Graded Response Model (GRM) into AGIQA.</li>
+        <li><b>Psychology-Inspired:</b> First attempt to introduce the Graded Response Model (GRM) into AGIQA.</li>
         <li><b>Unimodal Guarantee:</b> Arithmetic constraints theoretically eliminate "semantic drift" and multi-peak distributions.</li>
-        <li><b>Plugable:</b> Seamlessly enhances SOTA models (IPCE, CLIP-AGIQA, etc.) without architectural redesign.</li>
-        <li><b>Efficiency Boost:</b> Reduces FLOPs by up to 27% while consistently improving SRCC/PLCC.</li>
+        <li><b>Plugable:</b> Seamlessly enhances SOTA models without architectural redesign.</li>
+        <li><b>Efficiency Boost:</b> Reduces FLOPs by up to 27% while consistently improving performance.</li>
       </ul>
     </td>
   </tr>
@@ -47,20 +46,23 @@
       <em style="font-size: 0.90em; color: #57606a;"><b>Overview</b> of our AGQG enhancement framework. The existing AGIQA model is adopted for ability estimation and augmented with an additional branch for difficulty estimation.</em>
     </td>
   </tr>
-</table> -->
+</table>
+<!-- 
+<strong>AGQG brings psychometric quality grading to existing AGIQA models through ability estimation, ordered difficulty modeling, and an arithmetic graded response model.</strong> -->
 
+</div>
 <!-- 方案一：左图右文 · 核心亮点布局 (已改为 Flexbox 响应式布局) -->
-<div style="display: flex; flex-wrap: wrap; align-items: stretch; justify-content: center; gap: 20px; max-width: 950px; margin: 20px auto; padding: 10px;">
-  <div style="flex: 1 1 300px; max-width: 500px; text-align: center; display: flex; align-items: center; justify-content: center;">
+<div style="display: flex; flex-wrap: wrap; align-items: stretch; justify-content: center; gap: 20px; max-width: 800; margin: 20px auto; padding: 10px;">
+  <div style="flex: 1 1 300px; max-width: 400px; text-align: center; display: flex; align-items: center; justify-content: center;">
     <img src="assets/framework.png" width="100%" style="border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.12); border: 1px solid #d0d7de; max-width: 100%; height: auto;" alt="AGQG Framework"/>
   </div>
-  <div style="flex: 1 1 300px; max-width: 450px; background: #f6f8fa; border-radius: 12px; border: 1px solid #d0d7de; padding: 20px; box-sizing: border-box;">
+  <div style="flex: 1 1 300px; max-width: 400px; background: #f6f8fa; border-radius: 12px; border: 1px solid #d0d7de; padding: 20px; box-sizing: border-box;">
     <h3 style="margin-top: 0; color: #24292f; text-align: left; font-size: 1.2em;">🌟 Core Highlights</h3>
     <ul style="line-height: 1.8; color: #24292f; font-size: 15px; padding-left: 20px; margin: 0; text-align: left;">
       <li><b>Psychometrics-Inspired:</b> First attempt to introduce the Graded Response Model (GRM) into AGIQA.</li>
       <li><b>Unimodal Guarantee:</b> Arithmetic constraints theoretically eliminate "semantic drift" and multi-peak distributions.</li>
-      <li><b>Pluggable:</b> Seamlessly enhances SOTA models (IPCE, CLIP-AGIQA, etc.) without architectural redesign.</li>
-      <li><b>Efficiency Boost:</b> Reduces FLOPs by up to 27% while consistently improving SRCC/PLCC.</li>
+      <li><b>Pluggable:</b> Seamlessly enhances SOTA models without architectural redesign.</li>
+      <li><b>Efficiency Boost:</b> Reduces FLOPs by up to 27% while consistently improving performance.</li>
     </ul>
   </div>
   <div style="width: 100%; text-align: center; padding-top: 12px;">
@@ -68,11 +70,7 @@
   </div>
 </div>
 
-<!-- 
-<strong>AGQG brings psychometric quality grading to existing AGIQA models through ability estimation, ordered difficulty modeling, and an arithmetic graded response model.</strong> -->
-
 </div>
-
 ---
 
 ## 📢 Updates
@@ -97,7 +95,7 @@ Existing AGIQA models usually produce multi-peak prediction distributions, where
         <span style="font-size: 1.2em;">✨</span> Explore AGRM Interactively
       </h4>
       <p style="margin: 0; color: #475569; font-size: 0.9em; line-height: 1.6;">
-        Static curves too dense? Visit our <b>Project Page</b> to use the dynamic simulator. Adjust ability (\(\theta\)) and difficulty parameters in real-time to observe the guaranteed unimodal property!
+        Static curves too dense? Visit our <b>Project Page</b> to use the dynamic simulator. Adjust ability ($\theta$) and difficulty parameters in real-time to observe the guaranteed unimodal property!
       </p>
     </div>
     <a href="https://agqggithubio.vercel.app/" target="_blank" style="display: inline-flex; align-items: center; gap: 8px; background: #2563eb; color: #ffffff; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 0.95em; box-shadow: 0 4px 10px rgba(37,99,235,0.3); transition: all 0.2s; white-space: nowrap;">
@@ -114,7 +112,7 @@ Existing AGIQA models usually produce multi-peak prediction distributions, where
 
   <!-- 3. 学术图注 (限制最大宽度，保证阅读体验) -->
   <em style="font-size: 0.88em; color: #57606a; display: block; text-align: center; margin-top: 16px; line-height: 1.7; max-width: 800px; margin-left: auto; margin-right: auto;">
-    <b>Figure 3:</b> Distributions of the cumulative category probability \(P^*(\theta)\) (first row), category response probability \(P(\theta)\) (second row), and the category response probability at four specific \(\theta\) (third row). With increasing \(\gamma\), the response distributions exhibit enhanced unimodality, aligning more closely with the expected behavior in human quality assessment.
+    <b>Figure 3:</b> Distributions of the cumulative category probability $P^*(\theta)$ (first row), category response probability $P(\theta)$ (second row), and the category response probability at four specific $\theta$ (third row). With increasing $\gamma$, the response distributions exhibit enhanced unimodality, aligning more closely with the expected behavior in human quality assessment.
   </em>
 </div>
 
@@ -127,16 +125,16 @@ Existing AGIQA models usually produce multi-peak prediction distributions, where
     <strong>Examples</strong> of the operational unimodality criterion over five quality grades.
     <br>
     • <strong>Top row (Unimodal):</strong> The four cases of Theorem 1: 
-      (a) mode at category 1 (\(\theta<\theta_1\)); 
-      (b) interior mode (\(\theta_1<\theta<\theta_2\), \(\theta\neq x_k\)); 
-      (c) mode at category 5 (\(\theta>\theta_2\)); 
-      (d) a tied adjacent pair at the intersection \(\theta = x_3\), with the single equality \(P_3 = P_4\).
+      (a) mode at category 1 ($\theta<\theta_1$); 
+      (b) interior mode ($\theta_1<\theta<\theta_2$, $\theta\neq x_k$); 
+      (c) mode at category 5 ($\theta>\theta_2$); 
+      (d) a tied adjacent pair at the intersection $\theta = x_3$, with the single equality $P_3 = P_4$.
     <br>
-    • <strong>Bottom row (Multimodal):</strong> Each panel contains a strict valley \(P_i>P_j<P_l\) with \(i<j<l\): 
-      (e) peaks at \(\{1, 5\}\); 
-      (f) peaks at \(\{1, 3, 5\}\); 
-      (g) peaks at \(\{2, 4\}\); 
-      (h) peaks at \(\{3, 5\}\).
+    • <strong>Bottom row (Multimodal):</strong> Each panel contains a strict valley $P_i>P_j<P_l$ with $i<j<l$: 
+      (e) peaks at $\{1, 5\}$; 
+      (f) peaks at $\{1, 3, 5\}$; 
+      (g) peaks at $\{2, 4\}$; 
+      (h) peaks at $\{3, 5\}$.
     <br>
   </div>
 </div>
