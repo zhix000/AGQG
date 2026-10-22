@@ -3,17 +3,17 @@
 <h1>Plug In, Grade Right: Psychology-Inspired AGIQA</h1>
 
 <div>
-    <a href="https://github.com/zhix000" target="_blank">Zhicheng Liao</a><sup>1</sup>&emsp;
-    <a href="" target="_blank">Baoliang Chen</a><sup>1,2,*</sup>&emsp;
-    <a href="" target="_blank">Hanwei Zhu</a><sup>2</sup>&emsp;
-    <a href="" target="_blank">Lingyu Zhu</a><sup>3</sup>&emsp;
-    <a href="" target="_blank">Shiqi Wang</a><sup>3</sup>&emsp;
-    <a href="" target="_blank">Weisi Lin</a><sup>2</sup>
+    <a href="https://scholar.google.com/citations?hl=zh-CN&user=pYJxwA8AAAAJ" target="_blank">Zhicheng Liao</a><sup>1</sup>&emsp;
+    <a href="https://scholar.google.com/citations?hl=zh-CN&user=w_WL27oAAAAJ" target="_blank">Baoliang Chen</a><sup>1,3,*</sup>&emsp;
+    <a href="https://scholar.google.com/citations?hl=zh-CN&user=-52izjkAAAAJ" target="_blank">Hanwei Zhu</a><sup>3</sup>&emsp;
+    <a href="https://github.com/lingyzhu0101" target="_blank">Lingyu Zhu</a><sup>2</sup>&emsp;
+    <a href="https://scholar.google.com/citations?hl=zh-CN&user=Pr7s2VUAAAAJ" target="_blank">Shiqi Wang</a><sup>2</sup>&emsp;
+    <a href="https://scholar.google.com/citations?hl=zh-CN&user=D_S41X4AAAAJ" target="_blank">Weisi Lin</a><sup>3</sup>
 </div>
 <div>
     <sup>1</sup>South China Normal University, China&emsp; 
-    <sup>2</sup>Nanyang Technological University, Singapore&emsp; 
-    <sup>3</sup>City University of Hong Kong, China&emsp; 
+    <sup>2</sup>City University of Hong Kong, China&emsp; 
+    <sup>3</sup>Nanyang Technological University, Singapore&emsp; 
     <br>
     <sup>*</sup>Corresponding author
 </div>
