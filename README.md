@@ -95,7 +95,7 @@ Existing AGIQA models usually produce multi-peak prediction distributions, where
 > </p>
 <!-- 图注部分 -->
 <p style="margin: 0; font-size: 0.85em; color: #57606a; line-height: 1.6; text-align: justify;">
-  <b>Distributions</b> of the cumulative category probability P*(θ) (first column), category response probability P(θ) (second column), and the category response probability at four specific θ (third row). With increasing γ, the response distributions exhibit enhanced unimodality, aligning more closely with the expected behavior in human quality assessment.
+  <b>Distributions</b> of the cumulative category probability P*(θ) (first column), category response probability P(θ) (second column), and the category response probability at specific θ (third row). With increasing γ, the response distributions exhibit enhanced unimodality, aligning more closely with the expected behavior in human quality assessment.
 </p>
 
   <!-- 2. 长图展示画框 (限制宽度，防止宽屏拉伸模糊) -->
