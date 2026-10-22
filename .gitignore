@@ -1,0 +1,26 @@
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.idea/
+.vscode/
+
+# Local datasets and checkpoints
+Database/**
+data/**
+!Database/README.md
+!data/README.md
+checkpoint*/
+*.pt
+*.pth
+*.ckpt
+*.h5
+
+# Generated experiment outputs
+*.csv
+*.json
+*.log
+inference_*/
+
+# Paper figures used by the public README
+!assets/*.png
+
