@@ -58,9 +58,9 @@
 
 - [x] **`2026.10.22`**: 🎉 Initial repository creation.
 - [x] **`2026.10.22`**: 🚀 **Initial Release:** Open-sourced the core AGQG implementations integrated with **IPCE**, **AMF-Net**, and **CLIP-AGIQA**.
-- [x] **`Coming Soon`**: 🌐 **Interactive Demo:** Interactive web demos for AGRM visualization.
+- [x] **`Available Now`**: 🌐 **Interactive Demo:** Interactive web demos for AGRM visualization.
 - [ ] **`Coming Soon`**: 🛠️ **Comprehensive Toolkit:** More evaluation code, pre-trained checkpoints, backbone supports and training pipelines.
-
+- [ ] **`Coming Soon`**: 🔌 **Unified AGQG API:** A modular and easily adaptable interface that generalizes the current model-specific integrations, enabling seamless extension to diverse AGIQA backbones.
 
 ## :bookmark_tabs: Overview
 
@@ -106,16 +106,12 @@ Existing AGIQA models usually produce multi-peak prediction distributions, where
       <strong>Examples</strong> of the operational unimodality criterion over five quality grades.
       <br>
       • <strong>Top row (Unimodal):</strong> The four cases of Theorem 1: 
-        (a) mode at category 1 (θ &lt; θ<sub>1</sub>); 
-        (b) interior mode (θ<sub>1</sub> &lt; θ &lt; θ<sub>2</sub>, θ ≠ x<sub>k</sub>); 
-        (c) mode at category 5 (θ &gt; θ<sub>2</sub>); 
-        (d) a tied adjacent pair at the intersection θ = x<sub>3</sub>, with the single equality P<sub>3</sub> = P<sub>4</sub>.
+        (a) mode at category 1; 
+        (b) interior mode; 
+        (c) mode at category 5; 
+        (d) a tied adjacent pair at the intersection θ = x₃, with the single equality P₃ = P₄.
       <br>
-      • <strong>Bottom row (Multimodal):</strong> Each panel contains a strict valley P<sub>i</sub> &gt; P<sub>j</sub> &lt; P<sub>l</sub> with i &lt; j &lt; l: 
-        (e) peaks at {1, 5}; 
-        (f) peaks at {1, 3, 5}; 
-        (g) peaks at {2, 4}; 
-        (h) peaks at {3, 5}.
+      • <strong>Bottom row (Multimodal):</strong> Each panel contains a strict valley Pᵢ > Pⱼ < Pₗ with i < j < l: 
       <br>
   </div>
 </div>
@@ -238,10 +234,10 @@ The following values are copied from the accompanying paper tables. They are inc
   <tr>
     <td colspan="2" style="padding: 15px; background: #ffffff; border: 1px solid #d0d7de; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); text-align: center;">
       <img src="assets/hyperparam_sensitivity.png" width="70%" style="border-radius: 6px;" alt="Hyperparameter sensitivity">
-      <em style="font-size: 0.8em; color: #57606a; display: block; text-align: center; margin-top: 8px;"><b>Hyperparameter sensitivity analysis</b>  of AGQG with respect to Dα and η.</em>
+      <em style="font-size: 0.8em; color: #57606a; display: block; text-align: center; margin-top: 8px;">
+      <b>Hyperparameter sensitivity analysis</b>  of AGQG</em>
     </td>
-  </tr>
-  
+  </tr>  
 </table>
 
 ## :love_you_gesture: Citation
@@ -256,4 +252,4 @@ If you find our work useful for your research, please consider citing the paper:
 ```
 
 ### Contact
-If you have any questions, please feel free to reach out at `zcliao@m.scnu.edu.cn, blchen@m.scnu.edu.cn`. 
+If you have any questions, please feel free to reach out at `zcliao@m.scnu.edu.cn, blchen6-c@my.cityu.edu.hk`. 
