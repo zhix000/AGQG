@@ -83,17 +83,27 @@ Existing AGIQA models usually produce multi-peak prediction distributions, where
     </a>
   </div> -->
 
-> ### ✨ Explore AGRM Interactively
->
-> Static curves too dense? Visit our **[Project Page](https://agqggithubio.vercel.app/)** to use the dynamic simulator. 
-> Adjust ability and difficulty parameters in real-time to observe the guaranteed unimodal property!
->
-> <p align="center">
->   <a href="https://agqggithubio.vercel.app/" target="_blank">
->     <img src="https://img.shields.io/badge/🚀_Try_Interactive_Demo-2563eb?style=for-the-badge" alt="Try Interactive Demo" />
->   </a>
-> </p>
+<div style="background: #f6f8fa; padding: 20px 24px; border-radius: 12px; border: 1px solid #d0d7de; margin: 20px auto; text-align: center;">
 
+  <h3 style="margin: 0 0 10px 0; color: #24292f;">✨ Explore AGRM Interactively</h3>
+  
+  <p style="margin: 0 0 15px 0; color: #475569; font-size: 0.95em; line-height: 1.6;">
+    Static curves too dense? Visit our <b>Project Page</b> to use the dynamic simulator. <br>
+    Adjust ability and difficulty parameters in real-time to observe the guaranteed unimodal property!
+  </p>
+
+  <a href="https://agqggithubio.vercel.app/" target="_blank">
+    <img src="https://img.shields.io/badge/🚀_Try_Interactive_Demo-2563eb?style=for-the-badge" alt="Try Interactive Demo" />
+  </a>
+
+  <hr style="border: 0; border-top: 1px solid #d0d7de; margin: 20px 0;">
+
+  <!-- 图注部分 -->
+  <p style="margin: 0; font-size: 0.85em; color: #57606a; line-height: 1.6; text-align: justify;">
+    <b>Distributions</b> of the cumulative category probability P*(θ) (first column), category response probability P(θ) (second column), and the category response probability at four specific θ (third row). With increasing γ, the response distributions exhibit enhanced unimodality, aligning more closely with the expected behavior in human quality assessment.
+  </p>
+  
+</div>
   <!-- 2. 长图展示画框 (限制宽度，防止宽屏拉伸模糊) -->
 <div style="background: #ffffff; border: 1px solid #d0d7de; border-radius: 12px; padding: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.08);">
     <a href="assets/agrm.png" target="_blank">
@@ -102,24 +112,25 @@ Existing AGIQA models usually produce multi-peak prediction distributions, where
   </div>
 
   <!-- 3. 学术图注 (限制最大宽度，保证阅读体验) -->
-  <em style="font-size: 0.88em; color: #57606a; display: block; text-align: center; margin-top: 16px; line-height: 1.7; max-width: 800px; margin-left: auto; margin-right: auto;">
-  <b>Distributions</b> of the cumulative category probability P*(θ) (first row), category response probability P(θ) (second row), and the category response probability at four specific θ (third row). With increasing γ, the response distributions exhibit enhanced unimodality, aligning more closely with the expected behavior in human quality assessment.
+  <!-- <em style="font-size: 0.88em; color: #57606a; display: block; text-align: center; margin-top: 16px; line-height: 1.7; max-width: 800px; margin-left: auto; margin-right: auto;">
+  <b>Distributions</b> of the cumulative category probability P*(θ) (first columm), category response probability P(θ) (second columm), and the category response probability at four specific θ (third row). With increasing γ, the response distributions exhibit enhanced unimodality, aligning more closely with the expected behavior in human quality assessment. -->
   </em>
 </div>
 
+
+> **Examples** of the operational unimodality criterion over five quality grades.
+>
+> - **Top row (Unimodal):** The four cases of Theorem 1: (a) mode at category 1; (b) interior mode; (c) mode at category 5; (d) a tied adjacent pair at the intersection θ = x₃, with the single equality P₃ = P₄.
+> - **Bottom row (Multimodal):** Each panel contains a strict valley Pᵢ > Pⱼ < Pₗ with i < j < l.
 <p align="center">
   <a href="assets/Response_detai.png" target="_blank">
     <img src="assets/Response_detai.png" width="100%" alt="Figure 6"/>
   </a>
 </p>
 
-> **Examples** of the operational unimodality criterion over five quality grades.
->
-> - **Top row (Unimodal):** The four cases of Theorem 1: (a) mode at category 1; (b) interior mode; (c) mode at category 5; (d) a tied adjacent pair at the intersection θ = x₃, with the single equality P₃ = P₄.
-> - **Bottom row (Multimodal):** Each panel contains a strict valley Pᵢ > Pⱼ < Pₗ with i < j < l.
 
 <!-- 主图保持正常展示 -->
-<div align="center" style="max-width: 850px; margin: 20px auto; padding: 20px; background: #f6f8fa; border-radius: 12px; border: 1px solid #d0d7de;">
+<!-- <div align="center" style="max-width: 850px; margin: 20px auto; padding: 20px; background: #f6f8fa; border-radius: 12px; border: 1px solid #d0d7de;">
   <a href="assets/Response_detai.png">
     <img src="assets/Response_detai.png" width="100%" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);" alt="Figure 6"/>
   </a>
@@ -135,7 +146,7 @@ Existing AGIQA models usually produce multi-peak prediction distributions, where
       • <strong>Bottom row (Multimodal):</strong> Each panel contains a strict valley Pᵢ > Pⱼ < Pₗ with i < j < l: 
       <br>
   </div>
-</div>
+</div> -->
 
 <!-- 折叠面板展示第二张图 -->
 <details style="max-width: 950px; margin: 10px auto; border: 1px solid #d0d7de; border-radius: 12px; overflow: hidden;">
@@ -241,18 +252,20 @@ The following values are copied from the accompanying paper tables. They are inc
   <tr>
     <td width="35%" style="padding: 15px; background: #ffffff; border: 1px solid #d0d7de; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
       <img src="assets/density_dist.png" width="100%" style="border-radius: 6px;" alt="Density distributions">
-      <em style="font-size: 0.8em; color: #57606a; display: block; text-align: center; margin-top: 8px;"><b>Density distributions</b>  of predicted IQA scores. AGQG reduces the overlap between high- and low-quality distributions.</em>
+      <em style="font-size: 0.8em; color: #57606a; display: block; text-align: center; margin-top: 8px;">
+      <!-- <b>Density distributions</b>  of predicted IQA scores. AGQG reduces the overlap between high- and low-quality distributions.</em> -->
     </td>
     <td width="50%" style="padding: 15px; background: #ffffff; border: 1px solid #d0d7de; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
       <img src="assets/trad_iqa.png" width="100%" style="border-radius: 6px;" alt="Classical IQA generalization">
-      <em style="font-size: 0.8em; color: #57606a; display: block; text-align: center; margin-top: 8px;"><b>Impact</b> of AGQG integration on classical IQA frameworks (DBCNN, HyperIQA) across natural and screen content images.</em>
+      <!-- <em style="font-size: 0.8em; color: #57606a; display: block; text-align: center; margin-top: 8px;">
+      <b>Impact</b> of AGQG integration on classical IQA frameworks (DBCNN, HyperIQA) across natural and screen content images.</em> -->
     </td>
   </tr>
   <tr>
     <td colspan="2" style="padding: 15px; background: #ffffff; border: 1px solid #d0d7de; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); text-align: center;">
       <img src="assets/hyperparam_sensitivity.png" width="70%" style="border-radius: 6px;" alt="Hyperparameter sensitivity">
-      <em style="font-size: 0.8em; color: #57606a; display: block; text-align: center; margin-top: 8px;">
-      <b>Hyperparameter sensitivity analysis</b>  of AGQG</em>
+      <!-- <em style="font-size: 0.8em; color: #57606a; display: block; text-align: center; margin-top: 8px;">
+      <b>Hyperparameter sensitivity analysis</b>  of AGQG</em> -->
     </td>
   </tr>  
 </table>
