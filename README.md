@@ -68,22 +68,31 @@ Existing AGIQA models usually produce multi-peak prediction distributions, where
 
 
 <div align="center" style="max-width: 1050px; margin: 10px auto;">
-  
-  <!-- 1. 交互引导横幅 (CTA Banner) -->
-<!-- 兼容性极强的 CTA Banner -->
-<div style="background-color: #eff6ff; background-image: linear-gradient(135deg, #eff6ff 0%, #f6f8fa 100%); border: 1px solid #bfdbfe; border-radius: 12px; padding: 20px 24px; margin-bottom: 24px; text-align: center; box-shadow: 0 4px 12px rgba(37,99,235,0.05);">
-  <h4 style="margin: 0 0 10px 0; color: #1d4ed8; font-size: 1.1em;">
-    <span style="font-size: 1.2em;">✨</span> Explore AGRM Interactively
-  </h4>
-  <p style="margin: 0 0 15px 0; color: #475569; font-size: 0.9em; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">
-    Static curves too dense? Visit our <b>Project Page</b> to use the dynamic simulator. Adjust ability and difficulty parameters in real-time to observe the guaranteed unimodal property!
-  </p>
-  <a href="https://agqggithubio.vercel.app/" target="_blank" style="display: inline-block; background-color: #2563eb; color: #ffffff; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 0.95em; box-shadow: 0 4px 10px rgba(37,99,235,0.3);">
-    🚀 Try Interactive Demo
-  </a>
-</div>
 
+  <!-- <div style="background: linear-gradient(135deg, #eff6ff 0%, #f6f8fa 100%); border: 1px solid #bfdbfe; border-radius: 12px; padding: 20px 24px; margin-bottom: 24px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; box-shadow: 0 4px 12px rgba(37,99,235,0.05);">
+    <div style="text-align: left; flex: 1; min-width: 280px;">
+      <h4 style="margin: 0 0 6px 0; color: #1d4ed8; font-size: 1.05em; display: flex; align-items: center; gap: 8px;">
+        <span style="font-size: 1.2em;">✨</span> Explore AGRM Interactively
+      </h4>
+      <p style="margin: 0; color: #475569; font-size: 0.9em; line-height: 1.6;">
+        Static curves too dense? Visit our <b>Project Page</b> to use the dynamic simulator. Adjust ability ($\theta$) and difficulty parameters in real-time to observe the guaranteed unimodal property!
+      </p>
+    </div>
+    <a href="https://agqggithubio.vercel.app/" target="_blank" style="display: inline-flex; align-items: center; gap: 8px; background: #2563eb; color: #ffffff; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 0.95em; box-shadow: 0 4px 10px rgba(37,99,235,0.3); transition: all 0.2s; white-space: nowrap;">
+      🚀 Try Interactive Demo
+    </a>
+  </div> -->
 
+> ### ✨ Explore AGRM Interactively
+>
+> Static curves too dense? Visit our **[Project Page](https://agqggithubio.vercel.app/)** to use the dynamic simulator. 
+> Adjust ability ($\theta$) and difficulty parameters in real-time to observe the guaranteed unimodal property!
+>
+> <p align="center">
+>   <a href="https://agqggithubio.vercel.app/" target="_blank">
+>     <img src="https://img.shields.io/badge/🚀_Try_Interactive_Demo-2563eb?style=for-the-badge" alt="Try Interactive Demo" />
+>   </a>
+> </p>
 
   <!-- 2. 长图展示画框 (限制宽度，防止宽屏拉伸模糊) -->
   <div style="background: #ffffff; border: 1px solid #d0d7de; border-radius: 12px; padding: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.08);">
@@ -138,6 +147,24 @@ Existing AGIQA models usually produce multi-peak prediction distributions, where
   </div>
 </details>
 
+<details style="max-width: 950px; margin: 10px auto; border: 1px solid #d0d7de; border-radius: 12px; overflow: hidden;">
+  <summary style="cursor: pointer; padding: 15px 20px; background-color: #f6f8fa; font-weight: 600; color: #0969da;">
+    Click to expand: Illustration of the <i>“semantic drift”</i> phenomenon in existing AGIQA models.
+  </summary>
+  <div style="padding: 20px; background-color: #ffffff; text-align: center;">
+    <a href="assets/semantic_drift.png" target="_blank">
+      <img src="assets/semantic_drift.png" width="100%" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);" alt="Figure 4"/>
+    </a>
+    <div style="font-size: 0.9em; color: #57606a; text-align: left; margin-top: 15px; line-height: 1.6;">
+      <br>
+      <b>(a)</b> Comparison of quality grade predictions between IPCE and our enhanced model. 
+      <br><br>
+      <b>(b)</b> Our AGQG module consistently improves existing AGIQA models (CLIP-IQA, TIER, IPCE) across six diverse datasets spanning perceptual quality (<i>Q</i>), prompt consistency (<i>C</i>), and perceptual authenticity (<i>A</i>) dimensions. 
+      <br><br>
+      <span style="color: #0969da; font-weight: 600;">The raincloud plots of MSE distributions reflect that multimodal samples exhibit higher MSE compared to unimodal ones. The similarity matrix of multi-grade quality prompts reveals an ordinal structure: adjacent prompts are more similar, and similarity decreases with distance.</span>
+    </div>
+  </div>
+</details>
 
 ## :diamonds: Installation
 ```bash
