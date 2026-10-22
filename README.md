@@ -52,32 +52,6 @@
 
 </div>
 
-<!-- 响应式左图右文 · 核心亮点布局 (已优化并排阈值) -->
-<div style="display: flex; flex-wrap: wrap; align-items: stretch; justify-content: center; gap: 20px; max-width: 1050px; margin: 20px auto; padding: 0 15px;">
-  
-  <!-- 左侧：图片区域 (最小宽度降至 280px，确保电脑端能并排) -->
-  <div style="flex: 1 1 200px; max-width: 550px; display: flex; align-items: center; justify-content: center;">
-    <img src="assets/framework.png" width="100%" style="border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.12); border: 1px solid #d0d7de; max-width: 100%; height: auto;" alt="AGQG Framework"/>
-  </div>
-  
-  <!-- 右侧：文字亮点区域 (最小宽度降至 280px，手机端自动换行并变成带背景的卡片) -->
-  <div style="flex: 1 1 200px; display: flex; flex-direction: column; justify-content: center; padding: 20px 24px; background: #f6f8fa; border-radius: 12px; border: 1px solid #d0d7de; box-sizing: border-box;">
-    <h3 style="margin-top: 0; margin-bottom: 12px; color: #24292f; text-align: left; font-size: 1.15em;">🌟 Core Highlights</h3>
-    <ul style="line-height: 1.8; color: #24292f; font-size: 14.5px; padding-left: 20px; margin: 0; text-align: left;">
-      <li><b>Psychology-Inspired:</b> First attempt to introduce the Graded Response Model (GRM) into AGIQA.</li>
-      <li><b>Unimodal Guarantee:</b> Arithmetic constraints theoretically eliminate "semantic drift" and multi-peak distributions.</li>
-      <li><b>Pluggable:</b> Seamlessly enhances SOTA models without architectural redesign.</li>
-      <li><b>Efficiency Boost:</b> Reduces FLOPs by up to 27% while consistently improving performance.</li>
-    </ul>
-  </div>
-
-  <!-- 底部：全局概述 -->
-  <div style="width: 100%; text-align: center; padding-top: 12px;">
-    <em style="font-size: 0.90em; color: #57606a; line-height: 1.6;"><b>Overview</b> of our AGQG enhancement framework. The existing AGIQA model is adopted for ability estimation and augmented with an additional branch for difficulty estimation.</em>
-  </div>
-  
-</div>
-
 ---
 
 ## 📢 Updates
@@ -119,7 +93,7 @@ Existing AGIQA models usually produce multi-peak prediction distributions, where
 
   <!-- 3. 学术图注 (限制最大宽度，保证阅读体验) -->
   <em style="font-size: 0.88em; color: #57606a; display: block; text-align: center; margin-top: 16px; line-height: 1.7; max-width: 800px; margin-left: auto; margin-right: auto;">
-    <b>Figure 3:</b> Distributions of the cumulative category probability $P^*(\theta)$ (first row), category response probability $P(\theta)$ (second row), and the category response probability at four specific $\theta$ (third row). With increasing $\gamma$, the response distributions exhibit enhanced unimodality, aligning more closely with the expected behavior in human quality assessment.
+  <b>Figure 3:</b> Distributions of the cumulative category probability P*(θ) (first row), category response probability P(θ) (second row), and the category response probability at four specific θ (third row). With increasing γ, the response distributions exhibit enhanced unimodality, aligning more closely with the expected behavior in human quality assessment.
   </em>
 </div>
 
@@ -129,20 +103,20 @@ Existing AGIQA models usually produce multi-peak prediction distributions, where
     <img src="assets/Response_detai.png" width="100%" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);" alt="Figure 6"/>
   </a>
   <div style="font-size: 0.85em; color: #57606a; text-align: left; margin-top: 16px; line-height: 1.6; padding: 0 10px;">
-    <strong>Examples</strong> of the operational unimodality criterion over five quality grades.
-    <br>
-    • <strong>Top row (Unimodal):</strong> The four cases of Theorem 1: 
-      (a) mode at category 1 ($\theta<\theta_1$); 
-      (b) interior mode ($\theta_1<\theta<\theta_2$, $\theta\neq x_k$); 
-      (c) mode at category 5 ($\theta>\theta_2$); 
-      (d) a tied adjacent pair at the intersection $\theta = x_3$, with the single equality $P_3 = P_4$.
-    <br>
-    • <strong>Bottom row (Multimodal):</strong> Each panel contains a strict valley $P_i>P_j<P_l$ with $i<j<l$: 
-      (e) peaks at $\{1, 5\}$; 
-      (f) peaks at $\{1, 3, 5\}$; 
-      (g) peaks at $\{2, 4\}$; 
-      (h) peaks at $\{3, 5\}$.
-    <br>
+      <strong>Examples</strong> of the operational unimodality criterion over five quality grades.
+      <br>
+      • <strong>Top row (Unimodal):</strong> The four cases of Theorem 1: 
+        (a) mode at category 1 (θ &lt; θ<sub>1</sub>); 
+        (b) interior mode (θ<sub>1</sub> &lt; θ &lt; θ<sub>2</sub>, θ ≠ x<sub>k</sub>); 
+        (c) mode at category 5 (θ &gt; θ<sub>2</sub>); 
+        (d) a tied adjacent pair at the intersection θ = x<sub>3</sub>, with the single equality P<sub>3</sub> = P<sub>4</sub>.
+      <br>
+      • <strong>Bottom row (Multimodal):</strong> Each panel contains a strict valley P<sub>i</sub> &gt; P<sub>j</sub> &lt; P<sub>l</sub> with i &lt; j &lt; l: 
+        (e) peaks at {1, 5}; 
+        (f) peaks at {1, 3, 5}; 
+        (g) peaks at {2, 4}; 
+        (h) peaks at {3, 5}.
+      <br>
   </div>
 </div>
 
