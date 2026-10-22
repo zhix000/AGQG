@@ -68,21 +68,22 @@ Existing AGIQA models usually produce multi-peak prediction distributions, where
 
 
 <div align="center" style="max-width: 1050px; margin: 10px auto;">
-
+  
   <!-- 1. 交互引导横幅 (CTA Banner) -->
-  <div style="background: linear-gradient(135deg, #eff6ff 0%, #f6f8fa 100%); border: 1px solid #bfdbfe; border-radius: 12px; padding: 20px 24px; margin-bottom: 24px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; box-shadow: 0 4px 12px rgba(37,99,235,0.05);">
-    <div style="text-align: left; flex: 1 1 280px; min-width: 0;">
-      <h4 style="margin: 0 0 6px 0; color: #1d4ed8; font-size: 1.05em; display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
-        <span style="font-size: 1.2em;">✨</span> Explore AGRM Interactively
-      </h4>
-      <p style="margin: 0; color: #475569; font-size: 0.9em; line-height: 1.6;">
-        Static curves too dense? Visit our <b>Project Page</b> to use the dynamic simulator. Adjust ability \(\theta\) and difficulty parameters in real-time to observe the guaranteed unimodal property!
-      </p>
-    </div>
-    <a href="https://agqggithubio.vercel.app/" target="_blank" style="display: inline-flex; align-items: center; justify-content: center; gap: 8px; background: #2563eb; color: #ffffff; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 0.95em; box-shadow: 0 4px 10px rgba(37,99,235,0.3); transition: all 0.2s; white-space: nowrap; flex-shrink: 0;">
-      🚀 Try Interactive Demo
-    </a>
-  </div>
+<!-- 兼容性极强的 CTA Banner -->
+<div style="background-color: #eff6ff; background-image: linear-gradient(135deg, #eff6ff 0%, #f6f8fa 100%); border: 1px solid #bfdbfe; border-radius: 12px; padding: 20px 24px; margin-bottom: 24px; text-align: center; box-shadow: 0 4px 12px rgba(37,99,235,0.05);">
+  <h4 style="margin: 0 0 10px 0; color: #1d4ed8; font-size: 1.1em;">
+    <span style="font-size: 1.2em;">✨</span> Explore AGRM Interactively
+  </h4>
+  <p style="margin: 0 0 15px 0; color: #475569; font-size: 0.9em; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">
+    Static curves too dense? Visit our <b>Project Page</b> to use the dynamic simulator. Adjust ability and difficulty parameters in real-time to observe the guaranteed unimodal property!
+  </p>
+  <a href="https://agqggithubio.vercel.app/" target="_blank" style="display: inline-block; background-color: #2563eb; color: #ffffff; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 0.95em; box-shadow: 0 4px 10px rgba(37,99,235,0.3);">
+    🚀 Try Interactive Demo
+  </a>
+</div>
+
+
 
   <!-- 2. 长图展示画框 (限制宽度，防止宽屏拉伸模糊) -->
   <div style="background: #ffffff; border: 1px solid #d0d7de; border-radius: 12px; padding: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.08);">
