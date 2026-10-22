@@ -51,26 +51,33 @@
 <strong>AGQG brings psychometric quality grading to existing AGIQA models through ability estimation, ordered difficulty modeling, and an arithmetic graded response model.</strong> -->
 
 </div>
-<!-- 方案一：左图右文 · 核心亮点布局 (已改为 Flexbox 响应式布局) -->
-<div style="display: flex; flex-wrap: wrap; align-items: stretch; justify-content: center; gap: 20px; max-width: 800; margin: 20px auto; padding: 10px;">
-  <div style="flex: 1 1 300px; max-width: 400px; text-align: center; display: flex; align-items: center; justify-content: center;">
+
+<!-- 响应式左图右文 · 核心亮点布局 (Flexbox 自适应) -->
+<div style="display: flex; flex-wrap: wrap; align-items: stretch; justify-content: center; gap: 24px; max-width: 1050px; margin: 20px auto; padding: 0 15px;">
+  
+  <!-- 左侧：图片区域 -->
+  <div style="flex: 1 1 400px; display: flex; align-items: center; justify-content: center;">
     <img src="assets/framework.png" width="100%" style="border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.12); border: 1px solid #d0d7de; max-width: 100%; height: auto;" alt="AGQG Framework"/>
   </div>
-  <div style="flex: 1 1 300px; max-width: 400px; background: #f6f8fa; border-radius: 12px; border: 1px solid #d0d7de; padding: 20px; box-sizing: border-box;">
-    <h3 style="margin-top: 0; color: #24292f; text-align: left; font-size: 1.2em;">🌟 Core Highlights</h3>
+  
+  <!-- 右侧：文字亮点区域 (手机端会自动换行到下方，并呈现为精美卡片) -->
+  <div style="flex: 1 1 350px; display: flex; flex-direction: column; justify-content: center; padding: 20px 24px; background: #f6f8fa; border-radius: 12px; border: 1px solid #d0d7de; box-sizing: border-box;">
+    <h3 style="margin-top: 0; margin-bottom: 12px; color: #24292f; text-align: left; font-size: 1.2em;">🌟 Core Highlights</h3>
     <ul style="line-height: 1.8; color: #24292f; font-size: 15px; padding-left: 20px; margin: 0; text-align: left;">
-      <li><b>Psychometrics-Inspired:</b> First attempt to introduce the Graded Response Model (GRM) into AGIQA.</li>
+      <li><b>Psychology-Inspired:</b> First attempt to introduce the Graded Response Model (GRM) into AGIQA.</li>
       <li><b>Unimodal Guarantee:</b> Arithmetic constraints theoretically eliminate "semantic drift" and multi-peak distributions.</li>
       <li><b>Pluggable:</b> Seamlessly enhances SOTA models without architectural redesign.</li>
       <li><b>Efficiency Boost:</b> Reduces FLOPs by up to 27% while consistently improving performance.</li>
     </ul>
   </div>
+
+  <!-- 底部：全局概述 (始终横跨全宽并居中) -->
   <div style="width: 100%; text-align: center; padding-top: 12px;">
     <em style="font-size: 0.90em; color: #57606a; line-height: 1.6;"><b>Overview</b> of our AGQG enhancement framework. The existing AGIQA model is adopted for ability estimation and augmented with an additional branch for difficulty estimation.</em>
   </div>
+  
 </div>
 
-</div>
 ---
 
 ## 📢 Updates
