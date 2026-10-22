@@ -56,12 +56,12 @@
 <div style="display: flex; flex-wrap: wrap; align-items: stretch; justify-content: center; gap: 20px; max-width: 1050px; margin: 20px auto; padding: 0 15px;">
   
   <!-- 左侧：图片区域 (最小宽度降至 280px，确保电脑端能并排) -->
-  <div style="flex: 1 1 300px; max-width: 550px; display: flex; align-items: center; justify-content: center;">
+  <div style="flex: 1 1 200px; max-width: 550px; display: flex; align-items: center; justify-content: center;">
     <img src="assets/framework.png" width="100%" style="border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.12); border: 1px solid #d0d7de; max-width: 100%; height: auto;" alt="AGQG Framework"/>
   </div>
   
   <!-- 右侧：文字亮点区域 (最小宽度降至 280px，手机端自动换行并变成带背景的卡片) -->
-  <div style="flex: 1 1 280px; display: flex; flex-direction: column; justify-content: center; padding: 20px 24px; background: #f6f8fa; border-radius: 12px; border: 1px solid #d0d7de; box-sizing: border-box;">
+  <div style="flex: 1 1 200px; display: flex; flex-direction: column; justify-content: center; padding: 20px 24px; background: #f6f8fa; border-radius: 12px; border: 1px solid #d0d7de; box-sizing: border-box;">
     <h3 style="margin-top: 0; margin-bottom: 12px; color: #24292f; text-align: left; font-size: 1.15em;">🌟 Core Highlights</h3>
     <ul style="line-height: 1.8; color: #24292f; font-size: 14.5px; padding-left: 20px; margin: 0; text-align: left;">
       <li><b>Psychology-Inspired:</b> First attempt to introduce the Graded Response Model (GRM) into AGIQA.</li>
@@ -264,8 +264,7 @@ The following values are copied from the accompanying paper tables. They are inc
   <tr>
     <td colspan="2" style="padding: 15px; background: #ffffff; border: 1px solid #d0d7de; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); text-align: center;">
       <img src="assets/hyperparam_sensitivity.png" width="70%" style="border-radius: 6px;" alt="Hyperparameter sensitivity">
-      <em style="font-size: 0.8em; color: #57606a; display: block; text-align: center; margin-top: 8px;">
-      <b>Hyperparameter sensitivity analysis</b>  of AGQG with respect to Dα and η.</em>
+      <em style="font-size: 0.8em; color: #57606a; display: block; text-align: center; margin-top: 8px;"><b>Hyperparameter sensitivity analysis</b>  of AGQG with respect to Dα and η.</em>
     </td>
   </tr>
   
