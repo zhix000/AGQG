@@ -83,27 +83,21 @@ Existing AGIQA models usually produce multi-peak prediction distributions, where
     </a>
   </div> -->
 
-<div style="background: #f6f8fa; padding: 20px 24px; border-radius: 12px; border: 1px solid #d0d7de; margin: 20px auto; text-align: center;">
+> ### ✨ Explore AGRM Interactively
+>
+> Static curves too dense? Visit our <b>Project Page</b> to use the dynamic simulator. 
+> Adjust ability and difficulty parameters in real-time to observe the guaranteed unimodal property!
+>
+> <p align="center">
+>   <a href="https://agqggithubio.vercel.app/" target="_blank">
+>     <img src="https://img.shields.io/badge/🚀_Try_Interactive_Demo-2563eb?style=for-the-badge" alt="Try Interactive Demo" />
+>   </a>
+> </p>
+<!-- 图注部分 -->
+<p style="margin: 0; font-size: 0.85em; color: #57606a; line-height: 1.6; text-align: justify;">
+  <b>Distributions</b> of the cumulative category probability P*(θ) (first column), category response probability P(θ) (second column), and the category response probability at four specific θ (third row). With increasing γ, the response distributions exhibit enhanced unimodality, aligning more closely with the expected behavior in human quality assessment.
+</p>
 
-  <h3 style="margin: 0 0 10px 0; color: #24292f;">✨ Explore AGRM Interactively</h3>
-  
-  <p style="margin: 0 0 15px 0; color: #475569; font-size: 0.95em; line-height: 1.6;">
-    Static curves too dense? Visit our <b>Project Page</b> to use the dynamic simulator. <br>
-    Adjust ability and difficulty parameters in real-time to observe the guaranteed unimodal property!
-  </p>
-
-  <a href="https://agqggithubio.vercel.app/" target="_blank">
-    <img src="https://img.shields.io/badge/🚀_Try_Interactive_Demo-2563eb?style=for-the-badge" alt="Try Interactive Demo" />
-  </a>
-
-  <hr style="border: 0; border-top: 1px solid #d0d7de; margin: 20px 0;">
-
-  <!-- 图注部分 -->
-  <p style="margin: 0; font-size: 0.85em; color: #57606a; line-height: 1.6; text-align: justify;">
-    <b>Distributions</b> of the cumulative category probability P*(θ) (first column), category response probability P(θ) (second column), and the category response probability at four specific θ (third row). With increasing γ, the response distributions exhibit enhanced unimodality, aligning more closely with the expected behavior in human quality assessment.
-  </p>
-  
-</div>
   <!-- 2. 长图展示画框 (限制宽度，防止宽屏拉伸模糊) -->
 <div style="background: #ffffff; border: 1px solid #d0d7de; border-radius: 12px; padding: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.08);">
     <a href="assets/agrm.png" target="_blank">
@@ -206,7 +200,6 @@ python agqg_aigciqa.py                # CLIP-AGIQA + AGQG
   </em>
 </div>
 
-
 <!-- 折叠面板展示第二张图 -->
 <details style="max-width: 950px; margin: 10px auto; border: 1px solid #d0d7de; border-radius: 12px; overflow: hidden;">
   <summary style="cursor: pointer; padding: 15px 20px; background: #f6f8fa; font-weight: 600; color: #0969da; list-style: none; display: flex; align-items: center; gap: 8px;">
@@ -218,7 +211,7 @@ python agqg_aigciqa.py                # CLIP-AGIQA + AGQG
       <img src="assets/score_scatter.png" width="100%" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);" alt="Figure 4"/>
     </a>
     <em style="font-size: 0.85em; color: #57606a; display: block; text-align: center; margin-top: 12px;">
-      <b>Figure 4:</b> Predicted scores versus ground-truth MOS. Blue: original models; green: models with AGQG; dashed line: ideal prediction. Q/C/A denote quality, consistency, and authenticity.
+      <b>Predicted scores</b> versus ground-truth MOS. Blue: original models; green: models with AGQG; dashed line: ideal prediction. Q/C/A denote quality, consistency, and authenticity.
     </em>
   </div>
 </details>
